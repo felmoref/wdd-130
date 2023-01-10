@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+  }
+  nav {
+    background-color: rgb(1, 36, 41);
+    padding: 25px;
+  }
+  a {
+    color: white;
+    margin: 50px;
+  }
+  h1 {
+    color: steelblue;
+  }
+  img {
+    width: 750px; 
+    height: 550;
+    border: 4px solid rgb(1, 36, 41);
+    
+  }
+  p {
+    padding: 10px;
+    text-align: justify;
+  }
+  footer {
+    
+    text-align: center;
+    background-color: rgb(1, 36, 41);
+    color:white
+  }
+  h1 {
+    font-style: italic;
+    background-color: rgb(1, 36, 41);
+    color: white;
+    
+  }
+  a {
+    color: orange;
+  }
+  html {}
