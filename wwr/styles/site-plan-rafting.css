@@ -2,29 +2,29 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
   --primary-color:#0a1630;
   --secondary-color:#e68a21;
   --accent1-color:#FFFFFF;
-  --accent2-color:white;
+  --accent2-color:;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Montserrat";
-  --paragraph-font: Montserrat, Helvetica, sans-serif;
+  --heading-font: Montserrat, sans-serif;
+  --paragraph-font: Montserrat, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: Pink;  /* headlines on a white background */ 
+  --headline-color-on-white: #0a1630;  /* headlines on a white background */ 
   --headline-color-on-color: #e68a21; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #E5E5E5; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #1d1c1c; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #E5E5E5; /* paragraph text on a colored background */ 
   --paragraph-background-color: #0a1630  ;
   --nav-link-color: #e68a21;
   --nav-background-color: #0a1630;
-  --nav-hover-link-color: #E5E5E5;
-  --nav-hover-background-color: #0a1630;
+  --nav-hover-link-color: #0a1630;
+  --nav-hover-background-color: #E5E5E5;
 }
 
 
@@ -35,7 +35,11 @@ body {
   margin: 0 auto;
   padding: 4em;
   font-size: 18px;
-  text-align: center;
+  text-align: justify;
+}
+ol {
+  text-align: left;
+  font-family: var(--heading-font);
 }
 img {
   display: block;
@@ -43,8 +47,8 @@ img {
   max-width: 300px;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family:  "Montserrat";
-  color: #0a1630;
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
 }
 h2 {
   text-align: center;
@@ -52,20 +56,20 @@ h2 {
 hr {
   height: 3px;
   margin: 35px 0;
-  background:#0a1630 ;
+  background: var(--accent1-color);
 }
 header {
   padding: 1em;
   text-align: center;
-  color: #e68a21;
-  background-color: #0a1630;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
 }
 header > h1, header > h2 {
-  color: #e68a21;
+  color: var(--headline-color-on-color);
 }
 p {
-  font-family: "Montserrat";
-  color: #0a1630;
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
   padding: 1em;
 }
 .colors {
@@ -75,32 +79,30 @@ p {
   text-align: center;
 }
 .colors th {
-  background-color: #797979;
-  color: #000000;
+  background-color: #999;
 }
 .colors td{
   width: 25%;
   height: 3em;
 }
 .primary {
-  background-color: #0a1630;
-  color: white;
+  background-color: var(--primary-color);
 }
 .secondary {
-  background-color: #e68a21;
+  background-color: var(--secondary-color);
 }
 .accent1 {
-  background-color: #FFFFFF;
+  background-color: var(--accent1-color);
 }
 .accent2{
-  background-color: white;
+  background-color: var(--accent2-color);
 }
 p.colored {
-  background-color: #0a1630;
-  color: #bebebe;
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
 }
 nav {
-  background-color:#0a1630;
+  background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
@@ -116,15 +118,16 @@ nav a {
   padding: 10px;
 }
 nav a:link, nav a:visited {
-  color: #e68a21;
+  color: var(--nav-link-color);
 }
 nav a:hover {
-  color: #ffffff;
-  background-color: #e68a21;
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 .sitemap {
-   display: grid;
+  display: grid;
   justify-content: center;
+
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
   grid-template-areas: ". . home home . ."
@@ -134,25 +137,21 @@ nav a:hover {
 }
 .sitemap > div {
   text-align: center;
-  
 }
 .sm-home {
   grid-area: home;
-  background-color: #cbcccf;
+  background-color: #ccc;
   line-height: 3em;
-  color: #000000;
 }
 .sm-page2 {
   grid-area: page2;
-  background-color: #cbcccf;
+  background-color: #ccc;
   line-height: 3em;
-  color: #000000
 }
 .sm-page3 {
   grid-area: page3;
-  background-color: #cbcccf;
+  background-color: #ccc;
   line-height: 3em;
-  color: #000000
 }
 .top {
   grid-area: top;
