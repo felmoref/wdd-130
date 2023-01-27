@@ -1,64 +1,79 @@
-body {
-background-color: palevioletred;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fba4cb;
 }
-ol {
-  margin: 0 auto;
-  width: 20%; /* adjust as needed */
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-    text-align: center;
-    color:white;
-   
-}
-h1 {
-  font-family: Arial, sans-serif;
-}
-.paragraph1 {
-    color: white;
-    text-align: center;
-}
-.paragraph2 {
+.educ h1{
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-img {
-    display: block;
-    margin: 0 auto;
-    width: 10%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  h2 {
-    color: white;
-    text-align: center;
-    
-  }
-  h1:hover {
+.educ h1:hover{
     color: black;
-  }
-  blockquote.quotation {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+}
+.educ p{
+    font-style: sans-serif;
+    font-size: 12px;
     color: white;
-
+    width: 350px;
+    text-align: center;
+    transform: translateX(80vh);
 }
-.prophet1 {
+.educ h4{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: 13px;
+}
+.educ ol{
+    color: black;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    transform: translateX(80vh);
+    font-weight: bold;
+    line-height: 30px;
+}
+img{
+   width: 140px;
+   height: 180px;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 2%;
+}
+.quote h2{
+    color:white;
+    text-align: center;
+    font-weight: lighter;
+    width: 250px;
+    font-size: 30px;
+    transform: translateX(85vh);
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif
+}
+.para1 p{
+    color: black;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: small;
-
+    word-spacing: 1px;
+    
 }
-.prophet2 {
+.para2 p{
+    color: black;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: small;
+}
+.para3 p{
+    color: black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-
-
-  
