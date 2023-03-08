@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why Rafting?</title>
+    <title>Contact Us</title>
     <link href="./styles/style.css" rel="stylesheet">
 </head>
 <body>
@@ -35,12 +35,27 @@
         </div>
 
         <main class="home-grid">
-            <img class="happy-rafting" src="images/Page2a.jpg" alt="Misty mountains">
-            <section class="thoughts">
-                <h2>Why Rafting?</h2>
-                <p>Rafting is a thrilling outdoor activity that offers adventure, beautiful scenery, exercise, team-building, and stress relief. It allows you to experience the rush of navigating through rapids while enjoying stunning landscapes, waterfalls, and wildlife. Rafting is a great way to stay active, bond with friends or family, and challenge yourself both physically and mentally. It can be an excellent stress-reliever, providing a sense of peace and serenity in the midst of the excitement. Overall, rafting is an enjoyable and rewarding way to experience nature and have fun in the great outdoors.</p>
-                <a class='join' href="rivers.html">Join Us</a>
-            </section>
+            <body>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_mail" />
+                        </li>
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send your message</button>
+                        </li>
+                    </ul>
+                </form>
+            </body>
         </main>
 <!--footer starts here-->
  <footer>
